@@ -25,6 +25,10 @@ function App() {
     background: isDayTime ? "skyblue" : "skyblue",
     height: "100vh",
   }
+  
+  if(weatherData.length === 0) {
+    return <div className="text-3xl">Loading...</div>
+  }
 
   return (
     <div style={style} className="flex items-center justify-center">
